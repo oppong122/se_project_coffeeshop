@@ -189,12 +189,6 @@
     padding: 20px;
     box-sizing: border-box;
     margin-top: 8px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;    
-    font-size: 20px;
-    line-height: 30px;
-    color: #838383;
     border-radius: 4px;  
     height: 60px;
 }
@@ -219,19 +213,21 @@
     color: #fff;
     border-radius: 4px; 
     height: 60px;
-}
-.form .form__button:hover{
-
+    transition: opacity 0.3s ease;
 }
 
+.form__button:hover{
+    opacity: 0.7;
 
-@keyframes form__button{
-    form{
-        opacity: 100;
-    }
-    to{
-        opacity: 70;
-    }
+}
+
+.form__input::placeholder{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;    
+    font-size: 20px;
+    line-height: 30px;
+    color: #838383;
 }
 
 

@@ -1,261 +1,237 @@
-.page{
-    font-family: Inter, Arial, sans-serif;
-    max-width: 1600px;
-    min-width: 1100px;
+@import url(../vendor/normalize.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+
+.menu{
+    padding: 100px 0 100px;
+    background-image: url(../images/background_menu.svg);
+    background-color: #fff;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
+
+.menu__title{
+    text-align: center;
+    margin: 0 0 24px;
+    max-width: 780;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+
+}
+
+.menu__subtitle{
+    text-align: center;
+    margin: 0 auto 100px;
+    max-width: 780px;
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.menu__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+.card{
+    width: 540px;
+
+}
+
+.card__title{
+    margin: 0 0 32px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.card__list-item{
+    margin: 0 0 16px;
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    margin: 0 auto;
-}
-
-.header{
-    padding: 30px 80px 40px;
-    min-height: 720px;
-    max-height: 800px;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
 
 }
 
-.nav{
+.card__list-divider{
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+}
+
+.about{
+    background-color: #0A2850;
+    color: #fff;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+   
+
 }
 
-.nav__logo{
-    position: relative;
-    left: -50px;
+.about__title{
+    max-width: 251px;
+    padding: 100px 80px 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    z-index: 1;
+    margin: 0;
+
+}
+
+.about__content{
+    padding: 119px 80px 173px;
+    max-width: 660px;
+    gap: 20px;
+    font-family: "Noto Serif";
+    font-style: normal;    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.about__paragraph{
+    margin: 20px 0 0;
+}
+
+.about__circle{
+    background-color: #2f80ed;
+    border-radius: 50%;
+    height: 426px;
+    width: 426px;
+    position: absolute;
+    left: -129px;
+    top: -152px ;  
+}
+
+.about__circle_animation_blurred{
+    background-color: #1e50b8;
+  border-radius: 50%;
+  height: 426px;
+  width: 426px;
+  position: absolute;
+  left: -129px;
+  top: -152px;
+  filter: blur(5px);
+  animation: 1.3s ease-in-out infinite;
+}
+
+@keyframes Pulsate{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.footer{
+    padding: 60px 80px 60px;
+    background: linear-gradient(180deg, #0A2850 0%, #071931 100%);
+    color: #fff;
+}
+
+.footer__contents{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__social_heading{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 20px;
+
+}
+
+.footer__logo{
     width: 105px;
     height: 39px;
+
 }
 
-.nav__links{
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    gap: 20px;
+.footer__content_social{
+    margin-left: 80px;
+}
+
+.footer__list{
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-.nav__link{
-    
-    color: #000;
+.footer__list-item{
+    margin: 0 0 16px;
+
+}
+
+.footer__social_link{
+    color: white;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-}
-
-.header__title{
-    font-family: "inter";
-    max-width: 720px;
+    gap: 10px;
+    font-family: "Inter";
+    font-style: normal; 
     font-weight: normal;
-    margin: 183px 0 0;
-    letter-spacing: -0.6px;
-    font-size: 60px;
-    line-height: 72px;
-}
-
-.header__span-accent{
-    font-family: "Noto Serif";
-    font-style: italic;
-    color: #2f80ed ;
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 72px;
-    display: block;
-}
-
-.header__description{
-    font-family: "Noto Serif";
-    font-style: normal;
-    font-weight: normal;
-    margin: 28px 0 0;
-    max-width: 683px;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.header__footer{
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #838383;
-    margin: 0 0 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
-.header__paragraph{
-    margin: 0;
-}
-
-.header__image{
-    position: absolute;
-    right: -5px;
-    height: 568px;
-    width: 646px;
-    top: 124px;
-}  
-
-.recipes{
-    background-size: cover;
-    background-image: url(/images/background_recipes.svg);
-    background-color: #0a2750;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    padding: 100px 80px 215px;
-
-}
-
-.recipes__title{
-    max-width: 580px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 52px;
-}
-
-.recipes__subtitle{
-    font-family: "Noto Serif";
-    font-style: normal;
-    font-weight: normal;
-    max-width: 438px;
-    font-size: 20px;
-    line-height: 30px;
-    margin: 24px 0 0;
-}
-
-.recipes__iframe{
-    width: 560px; 
-    height: 315px;
-    border-width: 0px;
-}
-
-.recipes__video-caption{
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.recipes__videos{
-    margin: 80px 0 0;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.reservation{
-    padding: 100px 0 120px;
-    background-image: url(/images/background_reservation.svg);
-    background-color:  #D9E7FF;
-    background-size: cover;
-}
-
-.reservation__title{
-    margin: 0 0 80px;
-    text-align: center;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 52px;
-}
-
-
-.reservation__form{
-    margin: 0 auto;
-}
-
-.form{
-    max-width: 385px;
-}
-
-.form__input{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 8px;
-    border-radius: 4px;  
-    height: 60px;
-}
-
-.form__fieldset{
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-.form__button{
-    width: 100%;
-    padding: 0%;
-    margin-bottom: 32px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #2f80ed;
-    border: 0;
-    color: #fff;
-    border-radius: 4px; 
-    height: 60px;
-    transition: opacity 0.3s ease;
-}
-
-.form__button:hover{
-    opacity: 0.7;
-
-}
-
-.form__input::placeholder{
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;    
-    font-size: 20px;
-    line-height: 30px;
-    color: #838383;
-}
-
-
-
-.form__label{
-    margin-bottom: 32px;
-    display: block;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
 
 }
 
-.form__checkbox{
-    height: 20px;
-    width: 20px;
+.footer__social_icon{
+    height: 16px;
+    width: 16px;
+    gap: 16px;
+
 }
 
-.form__label_type_checkbox{
-    display: flex;
-    justify-content: center;
+.footer__copyright{
+    margin: 108px 0 0;
     font-family: "Inter";
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    border-radius: 2px;
-    gap: 12px;
+}
+
+.footer__list_item:last-child{
+    margin-bottom: 0;
+}
+
+.footer__social_link:hover{
+    color: #c1c1c1;
+    transition: ease-in-out 1s;
 }

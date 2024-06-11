@@ -1,68 +1,70 @@
-.header{
-    padding: 30px 80px 40px;
-    min-height: 720px;
-    max-height: 800px;
-    background-image: url(../images/background_header.svg);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-
+.header {
+  padding: 30px 80px 40px;
+  min-height: 720px;
+  max-height: 800px;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.header__title{
-    font-family: "Inter", Arial, sans-serif;
-    max-width: 729px;
-    font-weight: normal;
-    margin: 183px 0 0;
-    letter-spacing: -0.6px;
-    font-size: 60px;
-    line-height: 72px;
-    z-index: 1;
+.header__title {
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 729px;
+  font-weight: normal;
+  margin: 183px 0 0;
+  letter-spacing: -0.6px;
+  font-size: 60px;
+  line-height: 72px;
+  z-index: 1;
 }
 
-.header__span-accent{
-    font-family: "Noto Serif";
-    font-style: italic;
-    color: #2f80ed;
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 72px;
-    display: block;
+.header__span-accent {
+  font-family: "Noto Serif";
+  font-style: italic;
+  color: #2f80ed;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 72px;
+  display: block;
 }
 
-.header__description{
-    font-family: "Noto Serif";
-    font-style: normal;
-    font-weight: normal;
-    margin: 28px 0 0;
-    max-width: 683px;
-    font-size: 20px;
-    line-height: 30px;
+.header__description {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  margin: 28px 0 0;
+  max-width: 683px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.header__footer{
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #838383;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    z-index: -1px;
+.header__footer {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-items: self-end;
+  z-index: 1;
 }
 
-.header__paragraph{
-    margin: 0;
+.header__paragraph {
+  margin: 0;
 }
 
-.header__image{
-    position: absolute;
-    right: 5px;
-    height: 568px;
-    width: 646px;
-    top: 124px;
+.header__image {
+  position: absolute;
+  right: 5px;
+  height: 568px;
+  width: 646px;
+  top: 124px;
 }

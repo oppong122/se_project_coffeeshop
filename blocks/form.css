@@ -1,79 +1,78 @@
-.form{
-    max-width: 385px;
-    background-color: #D9E7FF;
+.form {
+  max-width: 385px;
+  background-color: #d9e7ff;
 }
 
-.form__input{
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;    
-    font-size: 20px;
-    line-height: 30px;
-    display: block;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 8px;
-    border-radius: 2px;  
-    height: 60px;
+.form__input {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  border-radius: 2px;
+  height: 60px;
 }
 
-.form__fieldset{
-    padding: 0;
-    margin: 0;
-    border: none;
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
-.form__button{
-    width: 100%;
-    padding: 0%;
-    margin-bottom: 32px;
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #2f80ed;
-    border: 0;
-    color: #fff;
-    border-radius: 4px; 
-    height: 60px;
-    transition: opacity 0.3s ease;
+.form__button {
+  width: 100%;
+  padding: 0%;
+  margin-bottom: 32px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2f80ed;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  height: 60px;
+  transition: opacity 0.3s ease;
 }
 
-.form__button:hover{
-    opacity: 0.7;
-
+.form__button:hover {
+  opacity: 0.7;
 }
 
-.form__input::placeholder{
-    color: #838383;
+.form__input::placeholder {
+  color: #838383;
 }
 
-.form__label{
-    margin-bottom: 32px;
-    display: block;
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+.form__label {
+  margin-bottom: 32px;
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.form__checkbox{
-    height: 20px;
-    width: 20px;
-    border-radius: 2px;
+.form__checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
 }
 
-.form__label_type_checkbox{
-    /*this should contain a unique style because it can get all the text property from the form__label */
-    display: flex;
-    justify-content: center;
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    gap: 12px;
+.form__label_type_checkbox {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  gap: 12px;
+  margin-bottom: 0;
 }

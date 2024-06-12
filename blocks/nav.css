@@ -30,5 +30,5 @@
 
 .nav__link:hover {
   color: #2f80ed;
-  transition: ease-in-out;
+  transition: color 0.3s ease-in-out;
 }

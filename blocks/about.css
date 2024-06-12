@@ -23,16 +23,19 @@
 .about__content {
   padding: 119px 80px 173px 0;
   max-width: 660px;
-  gap: 20px;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
 }
 
-.about__paragraph:first-child {
+.about__paragraph {
   margin: 0 0 20px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -46,7 +49,6 @@
 }
 
 .about__circle_animation_blurred {
-  filter: blur(5px);
   animation: pulsate 1.3s ease-in-out infinite;
 }
 
@@ -56,9 +58,9 @@
   }
   50% {
     opacity: 0.6;
-    transform: scale(1.2);
   }
   100% {
+    transform: scale(1.2);
     opacity: 0;
   }
 }

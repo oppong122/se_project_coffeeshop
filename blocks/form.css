@@ -16,6 +16,7 @@
   margin-top: 8px;
   border-radius: 4px;
   height: 60px;
+  border: #838383 solid 1px;
 }
 
 .form__fieldset {
